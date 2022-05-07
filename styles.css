@@ -1,0 +1,248 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amatic SC", sans-serif
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("pizza.jpg");
+    min-height: 90%;
+    filter: grayscale(0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto auto;
+    text-align: center;
+    z-index: -10;
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    width: 100%;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    color: #ddd;
+    z-index: 10;
+}
+
+ul {
+    opacity: 0.8;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: #333;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+li {
+    padding: 0.75rem 1.25rem;
+}
+
+header:hover {
+    background-color: #000;
+    opacity: 1;
+}
+
+ul:hover {
+    background-color: #000;
+}
+
+ul li:hover {
+    background-color: #ddd;
+    color: #111;
+}
+
+ul li a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+i {
+    font-size: x-large;
+}
+
+.bar {
+    text-align: end;
+    padding: 1rem;
+}
+
+.herotext {
+    font-size: 100px;
+    margin-bottom: 1rem;
+}
+
+.herobutton a {
+    margin: auto auto;
+    text-align: center;
+    font-size: 35px;
+    display: inline-block;
+    background-color: #000;
+    padding: 0.5rem 1.5rem;
+}
+
+.herobutton a:hover {
+
+    cursor: pointer;
+    background-color: #ddd;
+    color: #111;
+
+}
+
+.open {
+    display: inline-flex;
+    color: #fff;
+    font-size: 25px;
+    background-color: #000;
+    text-align: start;
+    position: absolute;
+    bottom: 0.75rem;
+    left: 1rem;
+    align-items: flex-start;
+}
+
+.open p {
+    margin: 0.25rem 1rem;
+}
+
+.menu {
+    font-size: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+}
+.menusel{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border: 1px solid #ddd;
+}
+.chart{
+    background-color: black;
+}
+.menusel div{
+    width: 100%;
+    padding: 1rem 1.5rem;
+}
+
+.menusel div:hover {
+
+    cursor: pointer;
+    background-color: #ef2929;
+
+}
+.menuitems{
+    background-color: white;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 35px;
+    padding:1rem 1.5rem;
+
+
+}
+.menuitemname{
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.menuitemssel{
+    justify-content: space-between;
+    display: flex;
+    
+}
+.menuitemdesc{
+    color: #333;
+    opacity: 0.7;
+    padding: 2rem 0;
+}
+.menuitemprice{
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #555;
+    color: #fff;
+    display: inline-block;
+    margin-top:auto ;
+    margin-bottom: auto;
+}
+.menuitemcard{
+    border-bottom: 1px solid rgba(130, 130, 130, .1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 800px) {
+    ul {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+
+    }
+
+    .bar {
+        display: none;
+    }
+
+
+}

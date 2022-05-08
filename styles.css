@@ -10,7 +10,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+input {
     font-family: "Amatic SC", sans-serif
 }
 
@@ -31,7 +32,7 @@ h6 {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     opacity: 0.8;
     width: 100%;
@@ -150,10 +151,11 @@ i {
 }
 .chart{
     background-color: black;
+    padding-bottom: 7rem;
 }
 .menusel div{
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 1rem 0;
 }
 
 .menusel div:hover {
@@ -197,17 +199,135 @@ i {
 .menuitemcard{
     border-bottom: 1px solid rgba(130, 130, 130, .1);
 }
+.menuhider{
+    display:none;
+}
+.active{
+    background-color: #ef2929;
+}
+.poptags{
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #999;
+    color: #444;
+    display: inline-block;
+}
 
+.about{
+    background-color: #8a5d5a;
+    padding:0 1rem;
+}
+.abouttitle{
+    font-size: 50px;
+    display: flex;
+    padding: 3.5rem 0;
+    color: #fff;
+    justify-content: center;
+}
+.aboutdesc{
+    font-size: 25px;
+    color: white;
+    display: flex;
+}
+.chefimg{
+    width: 160px;
+    height: 110px;   
+    border-radius: 100%;
+}
+.chefinfo{
+    color: white;
+    font-size:25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chefdesc{
 
+    color: white;
+    font-size:25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.aboutimg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    margin-top: 3rem;
+    width: 100%;
+}
 
+.openhead{
+    font-size: 35px;
+    padding: 2rem 0 0 0;
+    font-weight: bold;
+    color: white;
+}
+.opentime{
+    display: flex;
+    font-size: 25px;
+    color: white;
+}
+.opentime div{
+    padding: 1rem 0;
 
+    width: 100%;
+}
+.mapimg{
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-top: 3rem;
+    width: 100%;
+    filter: grayscale(0.4);
+}
 
+.contact{
+    background-color: #6c7b82;
+    color: white;
+    padding: 5rem 1rem;
+}
+.contacthead{
+    display: flex;
+    padding-bottom: 3.5rem;
+    justify-content: center;
+    font-size: 60px;
+}
+.contactdesc{
+    font-size: 25px;
+    padding:1rem 0;
+}
+.contactres{
 
+    font-size: 35px;
+    padding:1rem 0;
+}
+form{width: 98%;}
+input{
+    width:100%;
+    padding:1rem 0.5rem;
+    margin: 0.75rem 0;
+    font-size: 25px;
+}
+.sendbtn{
+    width: 104%;
+    margin: 0.5rem auto;
+    padding: 0.5rem 7rem;
+    display: flex;
+    justify-content: center;
 
-
-
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    padding: 5.5rem 0;
+}
 
 
 
@@ -243,6 +363,7 @@ i {
     .bar {
         display: none;
     }
-
-
+    .sendbtn{
+        width: 102%;
+    }
 }

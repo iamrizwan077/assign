@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/304ecba89b.js" crossorigin="anonymous"></script>
+    
+   
 </head>
 
 <body>
@@ -32,7 +34,7 @@
         </ul>
     </header>
 
-    <div class="bgimg">
+    <div id="home" class="bgimg">
         <div class="herocenter">
             <div class="herotext">THIN <br>CRUST PIZZA</div>
             <div class="herobutton"><a>LET ME SEE THE MENU</a></div>
@@ -56,16 +58,17 @@
 
     </div>
 
-    <div class="menu">
+    <div id="menu" class="menu">
         <p>THE MENU</p>
     </div>
+
     <div class="chart">
         <div class="menusel">
-            <div><a>PIZZA</a></div>
-            <div><a>SALADS</a></div>
-            <div><a>STARTER</a></div>
+            <div id="pizza"><a>PIZZA</a></div>
+            <div id="salad"><a>SALADS</a></div>
+            <div id="starter"><a>STARTER</a></div>
         </div>
-        <div class="menuitems">
+        <div id="pizzamenu" class="menuitems">
             <div class="menuitemcard">
                 <div class="menuitemssel">
                     <div class="menuitemname">Margherita</div>
@@ -77,7 +80,7 @@
             <div class="menuitemcard">
                 <div class="menuitemssel">
                     <div class="menuitemname">Formaggio</div>
-                    <div class="menuitemprice">  $15.50</div>
+                    <div class="menuitemprice"> $15.50</div>
 
                 </div>
                 <div class="menuitemdesc">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</div>
@@ -85,7 +88,7 @@
             <div class="menuitemcard">
                 <div class="menuitemssel">
                     <div class="menuitemname">Chicken</div>
-                    <div class="menuitemprice">  $17.00</div>
+                    <div class="menuitemprice"> $17.00</div>
 
                 </div>
                 <div class="menuitemdesc">Fresh tomatoes, mozzarella, chicken, onions</div>
@@ -98,10 +101,17 @@
                 </div>
                 <div class="menuitemdesc">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</div>
             </div>
-            
+
             <div class="menuitemcard">
                 <div class="menuitemssel">
-                    <div class="menuitemname">Meat Town</div>
+                    <div class="menuitemname">Meat Town<span style="padding: 5px;
+                        border-radius: 3px;
+                        background-color: #ef2929;
+                        color: #ddd;
+                        display: inline-block;
+                        margin-left: 0.5rem">
+                         HOT!
+                    </span></div>
                     <div class="menuitemprice"> $20.00</div>
 
                 </div>
@@ -109,7 +119,9 @@
             </div>
             <div class="menuitemcard">
                 <div class="menuitemssel">
-                    <div class="menuitemname">Parma</div>
+                    <div class="menuitemname">Parma
+                        <span class="poptags">NEW</span>
+                    </div>
                     <div class="menuitemprice"> $21.50</div>
 
                 </div>
@@ -117,8 +129,133 @@
             </div>
 
         </div>
+        <div id="saladmenu" class="menuitems menuhider">
+            <div class="menuitemcard">
+                <div class="menuitemssel">
+                    <div class="menuitemname">Lasagna    <span class="poptags">POPULAR</span></div>
+                    <div class="menuitemprice"> $13.50</div>
+
+                </div>
+                <div class="menuitemdesc">Special sauce, mozzarella, parmesan, ground beef</div>
+            </div>
+            <div class="menuitemcard">
+                <div class="menuitemssel">
+                    <div class="menuitemname">Ravioli</div>
+                    <div class="menuitemprice"> $14.50</div>
+
+                </div>
+                <div class="menuitemdesc">Ravioli filled with cheese</div>
+            </div>
+            <div class="menuitemcard">
+                <div class="menuitemssel">
+                    <div class="menuitemname">Spaghetti Classica</div>
+                    <div class="menuitemprice"> $11.00</div>
+
+                </div>
+                <div class="menuitemdesc">Fresh tomatoes, onions, ground beef</div>
+            </div>
+            <div class="menuitemcard">
+                <div class="menuitemssel">
+                    <div class="menuitemname">Seafood pasta</div>
+                    <div class="menuitemprice"> $25.50</div>
+
+                </div>
+                <div class="menuitemdesc">Salmon, shrimp, lobster, garlic</div>
+            </div>
+
+        </div>
+        <div id="startermenu" class="menuitems menuhider">
+            <div class="menuitemcard">
+                <div class="menuitemssel">
+                    <div class="menuitemname">Today's Soup  <span class="poptags">SEASONAL</span></div>
+                    <div class="menuitemprice"> $5.50</div>
+
+                </div>
+                <div class="menuitemdesc">Ask the waiter</div>
+            </div>
+            <div class="menuitemcard">
+                <div class="menuitemssel">
+                    <div class="menuitemname">Bruschetta</div>
+                    <div class="menuitemprice"> $8.50</div>
+
+                </div>
+                <div class="menuitemdesc">Bread with pesto, tomatoes, onion, garlic</div>
+            </div>
+            <div class="menuitemcard">
+                <div class="menuitemssel">
+                    <div class="menuitemname">Garlic bread</div>
+                    <div class="menuitemprice"> $9.50</div>
+
+                </div>
+                <div class="menuitemdesc">Grilled ciabatta, garlic butter, onions</div>
+            </div>
+            <div class="menuitemcard">
+                <div class="menuitemssel">
+                    <div class="menuitemname">Tomozzarella</div>
+                    <div class="menuitemprice"> $10.50</div>
+
+                </div>
+                <div class="menuitemdesc">Tomatoes and mozzarella</div>
+            </div>
+
+        </div>
     </div>
 
+    <div id="about" class="about">
+        <div>
+            <div class="abouttitle">
+                ABOUT
+            </div>
+            <div class="aboutdesc">
+                The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="aboutinfo">
+                <div class="chefinfo">
+                    <div><strong>The Chef? </strong>Mr. Italiano himself</div>
+                    <div><img class="chefimg"      src="chef.jpg"></div>
+                </div>
+
+                <div class="chefdesc">We are proud of our interiors.</div>
+                    
+            </div>
+            <img src="restaurant.jpg" alt="Restaurant image" class="aboutimg">
+            <div>
+                <div class="openhead">Opening Hours</div>
+                <div class="opentime">
+                    <div>
+                        <div>Mon & Tue CLOSED</div>
+                        <div>Wednesday 10.00 - 24.00</div>
+                        <div>Thursday 10:00 - 24:00</div>
+                    </div>
+                    <div>
+                        <div>Friday 10:00 - 12:00</div>
+                        <div>Saturday 10:00 - 23:00</div>
+                        <div>Sunday Closed</div>
+                    </div>
+                </div>
+            </div>
+            <img src="map.jpg" alt="Map Image" class="mapimg">
+            
+        </div>
+    </div>
+
+    <div  id="contact" class="contact">
+        <div class="contacthead">CONTACT</div>
+        <div class="contactdesc">Find us at some address at some place or call us at 05050515-122330</div>
+        <div class="contactdesc"><span style="background-color:black; padding:4px; margin-right:2px">FYI! </span>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</div>
+        <div class="contactres"><strong>Reserve </strong>a table, ask for today's special or just send us a message:</div>
+        <form>
+            <input type="text" placeholder="NAME">
+            <input type="number" placeholder="HOW MANY PEOPLE" required>
+            <input type="datetime-local" value="11/16/2020, 08 : 00 PM" required>
+            <input type="text" placeholder="MESSAGE\ SPECIAL REQUIREMENTS">
+            <input type="submit" value="SEND MESSAGE" class="sendbtn">
+        </form>
+    </div>
+
+    <footer>
+        <div>Copyrights &#169; Powered by w3.css</div>
+    </footer>
 
 
 
@@ -127,9 +264,7 @@
 
 
 
-
-
-
+    <script type="text/javascript" src="imdex.js"></script> 
 </body>
 
 
